@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sanchita Das — Portfolio</title>
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- HERO (separate div) -->
+    <div id="hero" class="section section--hero" aria-label="Hero section">
+      <div class="container hero__wrap">
+        <div class="hero__avatar-wrap" aria-hidden="true">
+          <img src="sanchita.jpg" alt="Sanchita Das portrait" class="hero__avatar img-cover">
+        </div>
+
+        <div class="hero__content">
+          <div class="hero__brand">
+            <h1 class="hero__title">Sanchita Das</h1>
+            <p class="hero__subtitle">Aspiring Data Analyst · Machine Learning & Security Enthusiast</p>
+          </div>
+
+          <nav class="hero__nav" aria-label="Primary navigation">
+            <a class="nav__link" href="#about">About</a>
+            <a class="nav__link" href="#projects">Projects</a>
+            <a class="nav__link" href="#skills">Skills</a>
+            <a class="nav__link" href="#education">Education</a>
+            <a class="nav__link" href="#certificates">Certificates</a>
+            <a class="nav__link" href="#hobbies">Hobbies</a>
+            <a class="nav__link" href="#contact">Contact</a>
+          </nav>
+
+          <div class="hero__cta-row">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--outline">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT (separate div) -->
+    <div id="about" class="section section--about" aria-label="About section">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">About</h2>
+        </header>
+        <div class="section__body">
+          <p class="lead">I'm Sanchita Das — I love turning data into insights. I build practical ML models (spam
+            detection, voice assistants) and explore security-focused projects that keep systems robust. My aim: become
+            a skilled Data Analyst and create reliable, user-centered solutions.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS (separate div) -->
+    <div id="projects" class="section section--projects" aria-label="Projects section">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Projects</h2>
+          <p class="section__subtitle">Selected work — click any card to view details.</p>
+        </header>
+
+        <div class="projects__grid">
+          <article class="card project-card">
+            <a href="#" class="project-card__link" aria-labelledby="proj-1-title">
+              <div class="project-card__media">
+                <img src="Screenshot 2025-07-30 214527.png" alt="Email Spam Classifier screenshot" class="img-cover">
+              </div>
+              <div class="project-card__body">
+                <h3 id="proj-1-title" class="project-card__title">Email Spam Classifier</h3>
+                <p class="project-card__desc">A TF-IDF + Naive Bayes pipeline to classify emails. Includes
+                  preprocessing, model evaluation, and a minimal demo notebook.</p>
+                <div class="project-card__meta">Python · scikit-learn · Pandas</div>
+              </div>
+            </a>
+          </article>
+
+          <article class="card project-card">
+            <a href="#" class="project-card__link" aria-labelledby="proj-2-title">
+              <div class="project-card__media">
+                <img src="ai voice assistant.png" alt="Intelligent Voice Assistant screenshot" class="img-cover">
+              </div>
+              <div class="project-card__body">
+                <h3 id="proj-2-title" class="project-card__title">Intelligent Voice Assistant</h3>
+                <p class="project-card__desc">Python-based voice assistant with speech recognition, TTS, note-taking and
+                  small automation scripts.</p>
+                <div class="project-card__meta">Python · SpeechRecognition · pyttsx3</div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILLS (separate div) -->
+    <div id="skills" class="section section--skills" aria-label="Skills section">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Skills</h2>
+        </header>
+
+        <div class="skills__wrap">
+          <div class="skills__chips">
+            <span class="chip">Python</span>
+            <span class="chip">Machine Learning</span>
+            <span class="chip">Data Analysis</span>
+            <span class="chip">Security</span>
+            <span class="chip">IoT</span>
+          </div>
+
+          <div class="skills__bars">
+            <div class="skill-row">
+              <div class="skill-row__label">Python</div>
+              <div class="skill-row__bar">
+                <div class="skill-row__fill fill-90"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-row__label">Machine Learning</div>
+              <div class="skill-row__bar">
+                <div class="skill-row__fill fill-85"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-row__label">Security</div>
+              <div class="skill-row__bar">
+                <div class="skill-row__fill fill-75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EDUCATION (separate div) -->
+    <div id="education" class="section section--education" aria-label="Education section">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Education</h2>
+        </header>
+
+        <ul class="edu__list">
+          <li class="edu__item">
+            <strong>M.G High School</strong> — SSC, GPA 5.00 (Scholarship)
+          </li>
+          <li class="edu__item">
+            <strong>Govt. Pioneer Girls College</strong> — HSC, GPA 5.00
+          </li>
+          <li class="edu__item">
+            <strong>Daffodil International University</strong> — BSc (CSE)
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CERTIFICATES (separate div) -->
+    <div id="certificates" class="section section--certificates" aria-label="Certificates section">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Certificates</h2>
+        </header>
+
+        <div class="certificates__grid">
+          <figure class="cert-card card">
+            <div class="cert-card__media">
+              <img src="cer1.png" alt="Leadership Qualities certificate" class="img-cover">
+            </div>
+            <figcaption class="cert-card__caption">Leadership Qualities — Boss vs Leader</figcaption>
+          </figure>
+
+          <figure class="cert-card card">
+            <div class="cert-card__media">
+              <img src="cer2.png" alt="Parenting with Purpose certificate" class="img-cover">
+            </div>
+            <figcaption class="cert-card__caption">Parenting with Purpose: Nurturing Relationship</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOBBIES (separate div) -->
+    <div id="hobbies" class="section section--hobbies" aria-label="Hobbies section">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Hobbies & Interests</h2>
+        </header>
+
+        <ul class="hobbies__list">
+          <li>Singing</li>
+          <li>Dancing</li>
+          <li>Voice Covers</li>
+          <li>Watching Movies</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CONTACT (separate div) -->
+    <div id="contact" class="section section--contact" aria-label="Contact section">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Contact</h2>
+        </header>
+
+        <div class="contact__grid">
+          <div class="contact__info card">
+            <p class="contact__text">You can reach me via phone or email. I respond within 48 hours.</p>
+            <ul class="contact__list">
+              <li>📱 <a href="tel:+8801735428298" class="link-inline">01735 428298</a></li>
+              <li>✉️ <a href="mailto:das2205101541@diu.edu.bd" class="link-inline">das2205101541@diu.edu.bd</a></li>
+            </ul>
+          </div>
+
+          <form class="contact__form card" action="#" method="post" novalidate>
+            <label class="field">
+              <span class="field__label">Name</span>
+              <input class="field__input" type="text" name="name" placeholder="Your name" required>
+            </label>
+
+            <label class="field">
+              <span class="field__label">Email</span>
+              <input class="field__input" type="email" name="email" placeholder="you@example.com" required>
+            </label>
+
+            <label class="field">
+              <span class="field__label">Message</span>
+              <textarea class="field__textarea" name="message" rows="4" placeholder="Write your message"></textarea>
+            </label>
+
+            <div class="form__actions">
+              <button type="submit" class="btn btn--primary">Send Message</button>
+              <button type="reset" class="btn btn--outline">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER (separate div) -->
+    <footer class="section section--footer" aria-label="Footer">
+      <div class="container footer__inner">
+        <div>© Sanchita Das <span id="current-year"></span></div>
+        <div class="footer__meta">Built with HTML & CSS — <span class="muted">Accessible · Responsive ·
+            Professional</span></div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Small inline script to set year (purely optional, safe) -->
+  <script>
+    // small unobtrusive enhancement; remove if you prefer no JS
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
